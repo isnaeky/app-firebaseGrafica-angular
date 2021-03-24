@@ -1,0 +1,17 @@
+<h2 style="padding-top: 20px;">
+    Votar por el juego del año</h2>
+<hr>
+<div class="row row-cols-2 row-cols-md-4 g-4 " *ngIf="juegos">
+    <div class="col mt-2" style="padding-right: 10px;
+    padding-left: 10px;" *ngFor="let g of juegos">
+        <div class="card bg-dark">
+            <img [src]="g.url" class="card-img-top" [alt]="g.name">
+            <div class="card-body">
+                <h5 class="card-title">{{g.name}}</h5>
+                <p class="card-text">Votos: <small>{{g.votos}}</small></p>
+                <!-- <p class="card-text"><small class="text-muted">Votos: {{g.votos}}</small></p> -->
+                <button type="button" class="btn btn-outline-primary btn-block" (click)="votar(g.id)" [disabled]="!bloquear">Votar</button>
+            </div>
+        </div>
+    </div>
+</div>
