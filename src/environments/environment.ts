@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   url:'http://localhost:5000/uploadfotos-2451/us-central1',
   firebase: {
-    apiKey: "AIzaSyAj_wRu0nFFxQeiMseLVrVTJg_kVR9f2HE",
+    apiKey: "You_api_key",
     authDomain: "uploadfotos-2451.firebaseapp.com",
     databaseURL: "https://uploadfotos-2451-default-rtdb.firebaseio.com",
     projectId: "uploadfotos-2451",
